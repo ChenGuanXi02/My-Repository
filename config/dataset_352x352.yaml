@@ -1,0 +1,76 @@
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+    image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/COD10K/TrainDataset/COD10KTrain/Imgs/'
+    gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/COD10K/TrainDataset/COD10KTrain/GT/'
+    trainsize: 352
+
+#train_dataset:
+#  name: dataset.data_val.PolypObjDataset
+#  params:
+#    image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TrainDataset/Imgs/'
+#    gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TrainDataset/GT/'
+#    trainsize: 352
+#
+
+test_dataset:
+#  CASIAv1:
+#    name: dataset.data_val.test_dataset
+#    params:
+#      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TestDataset/CASIAv1/Imgs/'
+#      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TestDataset/CASIAv1/GT/'
+#      testsize: 352
+#  Columbia:
+#    name: dataset.data_val.test_dataset
+#    params:
+#      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TestDataset/Columbia/Imgs/'
+#      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TestDataset/Columbia/GT/'
+#      testsize: 352
+#  Coverage:
+#    name: dataset.data_val.test_dataset
+#    params:
+#      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TestDataset/Coverage/Imgs/'
+#      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TestDataset/Coverage/GT/'
+#      testsize: 352
+#  IMD20:
+#    name: dataset.data_val.test_dataset
+#    params:
+#      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TestDataset/IMD20/Imgs/'
+#      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TestDataset/IMD20/GT/'
+#      testsize: 352
+#  NIST16:
+#    name: dataset.data_val.test_dataset
+#    params:
+#      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TestDataset/NIST16/Imgs/'
+#      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/CASIAv2/TestDataset/NIST16/GT/'
+#      testsize: 352
+
+  COD10K:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/COD10K/TestDataset/COD10KTest/Imgs/'
+      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/COD10K/TestDataset/COD10KTest/GT/'
+      testsize: 352
+#  CAMO:
+#    name: dataset.data_val.test_dataset
+#    params:
+#      image_root: '/media/datatset/COD10K/TestDataset/CAMO/Imgs/'
+#      gt_root: '/media/datatset/COD10K/TestDataset/CAMO/GT/'
+#      testsize: 352
+#  CHAMELEON:
+#    name: dataset.data_val.test_dataset
+#    params:
+#      image_root: '/media/datatset/COD10K/TestDataset/CHAMELEON/Imgs/'
+#      gt_root: '/media/datatset/COD10K/TestDataset/CHAMELEON/GT/'
+#      testsize: 352
+#  NC4K:
+#    name: dataset.data_val.test_dataset
+#    params:
+#      image_root: '/media/datatset/COD10K/TestDataset/NC4K/Imgs/'
+#      gt_root: '/media/datatset/COD10K/TestDataset/NC4K/GT/'
+#      testsize: 352
+#  CDS2K:
+#    name: dataset.cds2k_dataset.cds2K_dataset
+#    params:
+#      root: '/media/datatset/CDS2K'
+#      testsize: 352

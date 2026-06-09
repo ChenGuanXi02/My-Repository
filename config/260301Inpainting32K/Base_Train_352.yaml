@@ -1,0 +1,99 @@
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+    image_root: '/home/chenzeyu/TrainAndTest/Inpainting32K/Imgs/'
+    gt_root: '/home/chenzeyu/TrainAndTest/Inpainting32K/GT/'
+    trainsize: 352
+
+
+test_dataset:
+  CNN-Based-800:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/Inpainting32K/CNN_Based/Imgs_test/'
+      gt_root: '/home/chenzeyu/TrainAndTest/Inpainting32K/CNN_Based/GT_test/'
+      testsize: 352
+  GAN-Based-800:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/Inpainting32K/GAN_Based/Imgs_test/'
+      gt_root: '/home/chenzeyu/TrainAndTest/Inpainting32K/GAN_Based/GT_test/'
+      testsize: 352
+  TM-Based-800:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/Inpainting32K/TM_Based/Imgs_test/'
+      gt_root: '/home/chenzeyu/TrainAndTest/Inpainting32K/TM_Based/GT_test/'
+      testsize: 352
+  DM-Based-800:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/Inpainting32K/DM_Based/Imgs_test/'
+      gt_root: '/home/chenzeyu/TrainAndTest/Inpainting32K/DM_Based/GT_test/'
+      testsize: 352
+  SH:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/SH/'
+      gt_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/SH_GT/'
+      testsize: 352
+  SG  :
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/SG/'
+      gt_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/SG_GT/'
+      testsize: 352
+  RN:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/RN/'
+      gt_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/RN_GT/'
+      testsize: 352
+  PM:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/PM/'
+      gt_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/PM_GT/'
+      testsize: 352
+  PM_Old:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/PM_Old/'
+      gt_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/PM_Old_GT/'
+      testsize: 352
+  NS:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/NS/'
+      gt_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/NS_GT/'
+      testsize: 352
+  LR:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/LR/'
+      gt_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/LR_GT/'
+      testsize: 352
+  LB:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/LB/'
+      gt_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/LB_GT/'
+      testsize: 352
+  GC:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/GC/'
+      gt_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/GC_GT/'
+      testsize: 352
+  EC:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/EC/'
+      gt_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/EC_GT/'
+      testsize: 352
+  CA:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/CA/'
+      gt_root: '/home/chenzeyu/TrainAndTest/DID_InpDiffusion/CA_GT/'
+      testsize: 352

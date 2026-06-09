@@ -1,0 +1,14 @@
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+    image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/FinetuneDataset/CASIAv2/Imgs/'
+    gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/FinetuneDataset/CASIAv2/GT/'
+    trainsize: 352
+
+test_dataset:
+  CASIAv1:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/CASIAv1/Imgs/'
+      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/CASIAv1/GT/'
+      testsize: 352

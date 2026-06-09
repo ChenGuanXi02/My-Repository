@@ -1,0 +1,30 @@
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+    image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/FinetuneDataset/NIST16_404/Imgs/'
+    gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/FinetuneDataset/NIST16_404/GT/'
+    trainsize: 352
+
+test_dataset:
+  NIST16_160:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/NIST16_160/Imgs/'
+      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/NIST16_160/GT/'
+      testsize: 352
+#      # # 鲁邦
+#      distortion_cfg: # 新增干扰配置
+#        type: "jpeg_compression"  # 可选：gaussian_blur / gaussian_noise / jpeg_compression
+#        params:
+#          quality: 50  # JPEG压缩质量（强度）100/75/50
+
+#      distortion_cfg:
+#        type: "gaussian_noise"
+#        params:
+#          sigma: 0.01518  # variance = 3 → σ ≈ 0.00679 variance = 9 → σ ≈ 0.01176 variance = 15 → σ ≈ 0.01518
+#          seed: 42
+
+#      distortion_cfg:
+#        type: "gaussian_blur"
+#        params:
+#          kernel_size: 9  # 3/5/9

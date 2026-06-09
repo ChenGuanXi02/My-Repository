@@ -1,0 +1,38 @@
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+    image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/FinetuneDataset/Coverage_75/Imgs/'
+    gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/FinetuneDataset/Coverage_75/GT/'
+    trainsize: 352
+
+test_dataset:
+  CASIAv1:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/CASIAv1/Imgs/'
+      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/CASIAv1/GT/'
+      testsize: 352
+  Columbia:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/Columbia/Imgs/'
+      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/Columbia/GT/'
+      testsize: 352
+  Coverage_25:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/Coverage_25/Imgs/'
+      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/Coverage_25/GT/'
+      testsize: 352
+  IMD20:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/IMD20/Imgs/'
+      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/IMD20/GT/'
+      testsize: 352
+  NIST16_160:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/NIST16_160/Imgs/'
+      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/NIST16_160/GT/'
+      testsize: 352

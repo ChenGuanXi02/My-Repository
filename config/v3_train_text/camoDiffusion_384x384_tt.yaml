@@ -1,0 +1,39 @@
+project_name: CamoDiffusion
+
+__base__:
+  - config/v3_train_text/camoDiffusion_352x352.yaml
+
+diffusion_model:
+  name: model.SimpleDiffSef.CondGaussianDiffusion
+  params:
+    model: #model
+    image_size: 384
+    noise_d: 70
+
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+    trainsize: 384
+    boundary_modification: True
+
+test_dataset:
+  CASIAv1:
+    name: dataset.data_val.test_dataset
+    params:
+      testsize: 384
+  Columbia:
+    name: dataset.data_val.test_dataset
+    params:
+      testsize: 384
+  Coverage_25:
+    name: dataset.data_val.test_dataset
+    params:
+      testsize: 384
+  IMD20:
+    name: dataset.data_val.test_dataset
+    params:
+      testsize: 384
+  NIST16_160:
+    name: dataset.data_val.test_dataset
+    params:
+      testsize: 384

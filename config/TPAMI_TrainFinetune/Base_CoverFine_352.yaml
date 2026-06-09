@@ -1,0 +1,14 @@
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+    image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/FinetuneDataset/Coverage_75/Imgs/'
+    gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/FinetuneDataset/Coverage_75/GT/'
+    trainsize: 352
+
+test_dataset:
+  Coverage_25:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/Coverage_25/Imgs/'
+      gt_root: '/home/chenzeyu/pycharmprojects/CamoDiffusion/dataset/v3/TestDataset/Coverage_25/GT/'
+      testsize: 352

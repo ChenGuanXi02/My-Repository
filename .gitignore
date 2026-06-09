@@ -1,0 +1,18 @@
+# Python virtual environment
+venv/
+
+# IDE
+.idea/
+
+# Pretrained weights (large files)
+pretrained_weights/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,43 @@
+project_name: CamoDiffusion
+
+__base__:
+  - config/260226DiffForencis/Base_Train_352.yaml
+
+model:
+  name: model.net.net
+  params:
+    class_num: 1
+    mask_chans: 1
+
+cond_uvit:
+  name: model.net.EmptyObject
+  params:
+    conditioning_klass: model.net.EmptyObject
+
+diffusion_model:
+  name: model.SimpleDiffSef.CondGaussianDiffusion
+  params:
+    model: #model
+    image_size: 352
+    channels: 1
+    cond_channels: 3
+    noise_d: 64
+    num_sample_steps: 10
+    clip_sample_denoised: True
+    pred_objective: 'x0'
+    loss_type: 'model.loss.structure_loss'
+#    edge_weight: 0.5  # 可选：添加边缘损失权重参数（需在代码中读取）
+
+optimizer:
+  name: torch.optim.AdamW
+  params:
+    lr: 1.5e-4
+#    lr: 8e-6
+
+train_val_forward_fn: "model.train_val_forward.modification_train_val_forward"
+
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+    boundary_modification: True
+
