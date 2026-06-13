@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diffiml"
+authors = [
+    {name = "DiffIML Authors", email = "your-email@example.com"},
+]
+description = "DiffIML: Diffusion-based Image Manipulation Localization with Mask Latent Modeling (built on IMDLBenCo)."
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.8, <4"
+license = {text = "CC-BY-4.0"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: Free For Educational Use",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+]
+keywords = [
+    "AI",
+    "artificial intelligence",
+    "diffusion model",
+    "image forensics",
+    "image manipulation localization",
+    "image manipulation detection",
+]
+dynamic = ["version", "dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/<your-name>/DiffIML"
+"Bug Reports" = "https://github.com/<your-name>/DiffIML/issues"
+"Source" = "https://github.com/<your-name>/DiffIML"
+"Built upon" = "https://github.com/scu-zjz/IMDLBenCo"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["IMDLBenCo"]
+
+
+[tool.setuptools.dynamic]
+version = {attr = "IMDLBenCo.version.__version__"}
+dependencies = {file = "requirements.txt"}
